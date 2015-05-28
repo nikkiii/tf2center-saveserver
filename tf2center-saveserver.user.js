@@ -4,6 +4,7 @@
 // @version    1.0
 // @description  Saves server information for easy re-use.
 // @match      http://tf2center.com/lobbies
+// @match      https://tf2center.com/lobbies
 // @copyright  2015
 // @author Nikki
 // ==/UserScript==
