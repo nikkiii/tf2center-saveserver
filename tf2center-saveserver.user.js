@@ -8,7 +8,7 @@
 // @author Nikki
 // ==/UserScript==
 
-var servers = 'savedServers' in unsafeWindow.localStorage ? JSON.parse(unsafeWindow.localStorage['savedServers']) : [];
+var servers = 'savedServers' in localStorage ? JSON.parse(localStorage['savedServers']) : [];
 
 $.fn.extend({
     unselectOptions : function() {
@@ -141,5 +141,5 @@ function modalAddedOrChanged() {
 }
 
 function saveServers() {
-    unsafeWindow.localStorage['savedServers'] = JSON.stringify(servers);
+    localStorage['savedServers'] = JSON.stringify(servers);
 }
