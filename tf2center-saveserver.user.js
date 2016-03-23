@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       TF2Center Saved Servers
 // @namespace  http://meow.tf/
-// @version    1.0
+// @version    1.0.1
 // @description  Saves server information for easy re-use.
 // @match      http://tf2center.com/lobbies
 // @match      https://tf2center.com/lobbies
@@ -116,7 +116,7 @@ function modalAddedOrChanged() {
     $removeButton.click(function(e) {
         e.preventDefault();
         
-        var idx = savedSelect.val();
+        var idx = $savedSelect.val();
         
         if (idx) {
             servers.splice(idx, 1);
